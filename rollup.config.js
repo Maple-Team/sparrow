@@ -1,5 +1,5 @@
-import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
+import babel from 'rollup-plugin-babel'
+import resolve from 'rollup-plugin-node-resolve'
 
 export default {
   input: 'src/index.js', // 打包入口
@@ -22,4 +22,4 @@ export default {
     resolve(),
     babel(), // 使用 babel 插件
   ],
-};
+}
