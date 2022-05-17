@@ -12,23 +12,18 @@ module.exports = {
   plugins: ['import', '@typescript-eslint', 'prettier'],
   rules: {
     'import/prefer-default-export': 0,
-    'prttier/prettier': 0,
+    'prettier/prettier': ['error', { semi: false, singleQuote: true }],
     semi: [0, 'always'],
-    'import/no-unresolved': 'error',
+    'import/no-unresolved': 0,
+    'import/extensions': [0, 'never'],
   },
-  settings: {
-    'import/resolver': {
-      node: {
-        paths: ['src'],
-        extension: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-      typescript: {
-        alwaysTryTypes: true,
-        project: '.',
+  overrides: [
+    {
+      files: ['*.ts', '*.vue'],
+      rules: {
+        'no-undef': 'off',
+        'no-unused-vars': 'off',
       },
     },
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-  },
+  ],
 }
