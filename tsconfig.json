@@ -7,6 +7,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noImplicitAny": false,
+    "declaration": true,
+    "declarationDir": "./types",
+    "declarationMap": false,
+    "outDir": "output",
     "baseUrl": "./",
     "paths": {
       "*": [
@@ -15,7 +19,7 @@
     }
   },
   "include": [
-    "src"
+    "src",
   ],
   "exclude": [
     "node_modules"

@@ -1,6 +1,13 @@
 import { applyAttributes, createSVGElement, mount } from './utils'
 
-export const shape = <T>(type: Shape, context: Context, attributes: T) => {
+/**
+ *
+ * @param type
+ * @param context
+ * @param attributes
+ * @returns
+ */
+const shape = <T>(type: Shape, context: Context, attributes: T) => {
   const { group } = context
   const el = createSVGElement(type)
   applyAttributes(el, attributes)
@@ -12,6 +19,7 @@ export const line = (context: Context, attributes: SVGLineAttribtes) => {
   const el = shape('line', context, attributes) as SVGLineElement
   return el
 }
+
 export const circle = (context: Context, attributes: SVGCircleAttributes) => {
   const { radius, x, y } = attributes
   const el = shape('circle', context, {

@@ -1,25 +1,23 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
+import typescript from '@rollup/plugin-typescript'
 
 export default {
-  input: 'src/index.js', // 打包入口
+  input: 'src/index.ts', // 打包入口
   output: [
     {
-      file: 'lib/sparrow.js', // 对于 Nodejs，打包成 commonjs
+      file: 'lib/index.js', // 对于 Nodejs，打包成 commonjs
       format: 'cjs',
     },
     {
-      file: 'esm/sparrow.js', // 对于浏览器，打包成 ES module
+      file: 'esm/index.js', // 对于浏览器，打包成 ES module
       format: 'es',
     },
     {
-      file: 'dist/sparrow.min.js',
+      file: 'dist/index.min.js',
       name: 'sp',
       format: 'umd', // 对于 Nodejs 和浏览器，打包成混合模式
     },
   ],
-  plugins: [
-    resolve(),
-    babel(), // 使用 babel 插件
-  ],
+  plugins: [resolve(), babel(), typescript()],
 }

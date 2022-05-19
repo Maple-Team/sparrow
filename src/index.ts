@@ -6,3 +6,5 @@ export const drawRedRect = (svg: SVGElement) => {
   rect.setAttribute('y', '0')
   svg.appendChild(rect)
 }
+
+export { line, createContext, rect, path, circle, ring, text } from './renderer'

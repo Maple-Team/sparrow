@@ -2,7 +2,8 @@
   "name": "@maple/sparrow",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.min.js",
+  "module": "esm/index.js",
   "scripts": {
     "lint": "eslint --fix",
     "build": "rimraf -rf ./dist ./lib ./esm && rollup --config",
@@ -20,6 +21,7 @@
     "@babel/preset-env": "7.16.11",
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
+    "@rollup/plugin-typescript": "^8.3.2",
     "@types/jest": "26",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.23.0",

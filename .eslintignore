@@ -1,1 +1,8 @@
 __tests__
+dist
+lib
+esm
+node_modules
+example
+types
+.eslintrc.js
