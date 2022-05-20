@@ -617,8 +617,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@maple/sparrow@../":
-  version "1.0.0"
+"@maple/sparrow@^1.0.1":
+  version "1.0.1"
+  resolved "http://10.239.17.56:4873/@maple%2fsparrow/-/sparrow-1.0.1.tgz#ff2cf4336602c32190dda0d3deeda04f4dc63e69"
+  integrity sha512-ZvW83SPa2a5tI3uS5mcOsDHdwXEUP/cXk5EkdCOnUvZi9ydliniXLW/p7Lq4HMpAvxSaiDufW2NWHO+sZ6k3bg==
   dependencies:
     jest "26.0.1"
     jest-electron "^0.1.12"

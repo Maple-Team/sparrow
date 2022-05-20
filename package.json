@@ -25,7 +25,7 @@
     "svg",
     "visualization"
   ],
-  "author": "",
+  "author": "liutsing <liutsingluo@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "7.16.8",
