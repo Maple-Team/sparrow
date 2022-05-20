@@ -1,6 +1,6 @@
 {
-  "name": "@maple/sparrow",
-  "version": "1.0.2",
+  "name": "@liutsing-ro/sparrow",
+  "version": "0.0.1",
   "description": "A project to learning how to draw canvas/svg",
   "main": "dist/index.min.js",
   "module": "esm/index.js",
