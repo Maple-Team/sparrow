@@ -1,25 +1,30 @@
 {
   "name": "@maple/sparrow",
   "version": "1.0.0",
-  "description": "",
+  "description": "A project to learning how to draw canvas/svg",
   "main": "dist/index.min.js",
   "module": "esm/index.js",
   "files": [
     "dist",
     "types",
     "lib",
-    "esm"
+    "esm",
+    "types.d.ts"
   ],
   "typings": "types/index.d.ts",
   "scripts": {
     "lint": "eslint --fix",
-    "build": "rimraf -rf ./dist ./lib ./esm && rollup --config",
+    "build": "rimraf -rf ./types ./dist ./lib ./esm && rollup --config && tsc",
     "prepare": "husky install",
     "ci": "run-s lint test build",
     "test": "jest",
     "test-live": "cross-env DEBUG_MODE=1 jest --coverage"
   },
-  "keywords": [],
+  "keywords": [
+    "canvas",
+    "svg",
+    "visualization"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -49,7 +54,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Maple-Team/sparrow.git"
   },
   "dependencies": {
     "jest": "26.0.1",
