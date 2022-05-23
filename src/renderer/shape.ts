@@ -55,7 +55,7 @@ export const rect = (context: Context, attributes: SVGRectAttributes) => {
     ...attributes,
     width: `${Math.abs(width)}`,
     height: `${Math.abs(height)}`,
-  }) as SVGRectElement
+  })
   return el
 }
 

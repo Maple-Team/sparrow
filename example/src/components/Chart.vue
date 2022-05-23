@@ -7,7 +7,8 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   mounted() {
-    const context = createContext(600, 600)
+    const context  = createContext(600, 600)
+
     rect(context, {
       x: 0,
       y: 0,
@@ -16,7 +17,8 @@ export default defineComponent({
       fill: 'red',
     })
 
-    ;(this.$refs.container as HTMLDivElement).appendChild(context.node)
+    ;
+    (this.$refs.container as HTMLDivElement).appendChild(context.node)
   },
 })
 </script>

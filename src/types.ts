@@ -14,11 +14,11 @@ export interface Context {
  */
 export interface BaseAttributes {
   // https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill
-  fill: string
+  fill?: string
   // https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke
-  stroke: string
+  stroke?: string
   // https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-width
-  strikeWidth: number
+  strikeWidth?: number
 }
 export interface SVGLineAttribtes extends BaseAttributes {
   /**
