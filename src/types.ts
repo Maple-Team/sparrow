@@ -1,7 +1,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/SVG/Element
-type Shape = 'line' | 'rect' | 'circle' | 'path' | 'text' | 'ring'
+export type Shape = 'line' | 'rect' | 'circle' | 'path' | 'text' | 'ring'
 
-interface Context {
+export interface Context {
   node: SVGElement
   group: SVGGElement
 }
@@ -12,7 +12,7 @@ interface Context {
  * Aria Attributes/Styling Attributes/Presentation Attributes
  *
  */
-interface BaseAttributes {
+export interface BaseAttributes {
   // https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill
   fill: string
   // https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke
@@ -20,7 +20,7 @@ interface BaseAttributes {
   // https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-width
   strikeWidth: number
 }
-interface SVGLineAttribtes extends BaseAttributes {
+export interface SVGLineAttribtes extends BaseAttributes {
   /**
    * 起始点x坐标
    */
@@ -47,7 +47,7 @@ interface SVGLineAttribtes extends BaseAttributes {
   strokeWidth: number
 }
 
-interface SVGTextAttributes extends BaseAttributes {
+export interface SVGTextAttributes extends BaseAttributes {
   /**
    * text content
    */
@@ -61,7 +61,7 @@ interface SVGTextAttributes extends BaseAttributes {
    */
   y: number
 }
-interface SVGCircleAttributes extends BaseAttributes {
+export interface SVGCircleAttributes extends BaseAttributes {
   /**
    * 半径，映射r
    */
@@ -76,7 +76,7 @@ interface SVGCircleAttributes extends BaseAttributes {
   y: number
 }
 
-interface SVGRectAttributes extends BaseAttributes {
+export interface SVGRectAttributes extends BaseAttributes {
   width: number
   height: number
   x?: number
@@ -91,14 +91,14 @@ interface SVGRectAttributes extends BaseAttributes {
   ry?: number
 }
 
-interface SVGPathAttributes extends BaseAttributes {
+export interface SVGPathAttributes extends BaseAttributes {
   d: string
 }
 
 /**
  * 圆环
  */
-interface SVGRingAttributes extends Omit<SVGCircleAttributes, 'radius'> {
+export interface SVGRingAttributes extends Omit<SVGCircleAttributes, 'radius'> {
   /**
    * 外圆半径
    */

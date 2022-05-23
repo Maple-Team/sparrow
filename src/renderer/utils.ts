@@ -18,7 +18,7 @@ export const applyAttributes = <T>(element: SVGElement, attributes: T) => {
     // const kebabCaseKey = key.replace(/[a-z]+([[\w]+])/, '')
     const kebabCaseKey = key.replace(
       /[A-Z]/g,
-      (d) => `-${d.toLocaleLowerCase()}`,
+      (d) => `-${d.toLocaleLowerCase()}`
     )
 
     element.setAttribute(kebabCaseKey, value)

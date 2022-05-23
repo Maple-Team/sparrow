@@ -16,6 +16,7 @@ module.exports = {
     semi: [0, 'always'],
     'import/no-unresolved': 0,
     'import/extensions': [0, 'never'],
+    'comma-dangle': [0, 'never'],
     'object-curly-newline': [
       0,
       {

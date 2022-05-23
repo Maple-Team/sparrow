@@ -4,5 +4,7 @@ lib
 esm
 node_modules
 example
+example/
 types
+types/
 .eslintrc.js

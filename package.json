@@ -1,5 +1,5 @@
 {
-  "name": "@liutsing-ro/sparrow",
+  "name": "@liutsing/sparrow",
   "version": "0.0.1",
   "description": "A project to learning how to draw canvas/svg",
   "main": "dist/index.min.js",
@@ -8,8 +8,7 @@
     "dist",
     "types",
     "lib",
-    "esm",
-    "types.d.ts"
+    "esm"
   ],
   "typings": "types/index.d.ts",
   "scripts": {
@@ -45,23 +44,23 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.0",
+    "jest": "24.0.0",
+    "jest-electron": "^0.1.12",
     "lint-staged": ">=10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
     "rollup": "^2.72.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "typescript": "^4.6.4"
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-node-resolve": "^13.3.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Maple-Team/sparrow.git"
   },
-  "dependencies": {
-    "jest": "26.0.1",
-    "jest-electron": "^0.1.12",
-    "rimraf": "^3.0.2",
-    "rollup-plugin-babel": "^4.4.0"
-  },
+  "dependencies": {},
   "lint-staged": {
     "*.ts": "eslint --fix"
   }

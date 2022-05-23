@@ -13,15 +13,14 @@
     "outDir": "output",
     "baseUrl": "./",
     "paths": {
-      "*": [
+      "@/*": [
         "src/*"
       ]
     }
   },
   "include": [
     "src",
-    "types",
-    "types.d.ts"
+    "src/types.ts",
   ],
   "exclude": [
     "node_modules"
