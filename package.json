@@ -1,5 +1,5 @@
 {
-  "name": "@liutsing-ro/sparrow",
+  "name": "@liutsing/sparrow",
   "version": "0.0.1",
   "description": "A project to learning how to draw canvas/svg",
   "main": "dist/index.min.js",
