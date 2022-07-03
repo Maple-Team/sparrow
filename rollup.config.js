@@ -1,5 +1,5 @@
-import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
+import babel from '@rollup/plugin-babel'
+import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 
 export default {
@@ -19,5 +19,11 @@ export default {
       format: 'umd', // 对于 Nodejs 和浏览器，打包成混合模式
     },
   ],
-  plugins: [resolve(), babel(), typescript()],
+  plugins: [
+    resolve(),
+    babel({
+      babelHelpers: 'runtime',
+    }),
+    typescript(),
+  ],
 }

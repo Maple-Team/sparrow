@@ -1,4 +1,14 @@
-import { applyAttributes, createSVGElement, mount } from './utils'
+import type {
+  Context,
+  Shape,
+  SVGCircleAttributes,
+  SVGLineAttribtes,
+  SVGPathAttributes,
+  SVGRectAttributes,
+  SVGRingAttributes,
+  SVGTextAttributes,
+} from '../types'
+import { applyAttributes, createSVGElement, mount } from '@/renderer/utils'
 
 /**
  *
@@ -45,7 +55,7 @@ export const rect = (context: Context, attributes: SVGRectAttributes) => {
     ...attributes,
     width: `${Math.abs(width)}`,
     height: `${Math.abs(height)}`,
-  }) as SVGRectElement
+  })
   return el
 }
 

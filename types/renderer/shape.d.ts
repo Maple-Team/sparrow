@@ -1,7 +1,8 @@
+import type { Context, SVGCircleAttributes, SVGLineAttribtes, SVGPathAttributes, SVGRectAttributes, SVGRingAttributes, SVGTextAttributes } from '../types';
 export declare const line: (context: Context, attributes: SVGLineAttribtes) => SVGLineElement;
 export declare const circle: (context: Context, attributes: SVGCircleAttributes) => SVGCircleElement;
 export declare const text: (context: Context, attributes: SVGTextAttributes) => SVGElement;
-export declare const rect: (context: Context, attributes: SVGRectAttributes) => SVGRectElement;
+export declare const rect: (context: Context, attributes: SVGRectAttributes) => SVGElement;
 /**
  * 圆环
  * 画法：两个同心圆

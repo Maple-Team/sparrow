@@ -1,4 +1,5 @@
-import { createSVGElement, mount } from './utils'
+import type { Context } from '../types'
+import { createSVGElement, mount } from '@/renderer/utils'
 
 export const createContext = (width: number, height: number): Context => {
   const svg = createSVGElement('svg')
